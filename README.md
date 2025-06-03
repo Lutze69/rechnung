@@ -2,6 +2,15 @@
 
 ## 1. Projektübersicht
 Ein Programm, das bestehende PDF- oder Bild-Rechnungen als Vorlage nutzt und daraus digitale ZugPferd-Rechnungen (Light und Comfort) erzeugt bzw. einliest. Primärsprachig in Deutsch; englische Übersetzungen sind vorbereitet und können später aktiviert werden.
+### Lite-Lite-Version
+Ein minimales Grundgerüst befindet sich im Ordner `src/ZugPferdLite`. Es erzeugt aus Beispiel‑daten eine einfache XML-Rechnung.
+
+**Schnellstart**
+1. .NET 8 SDK installieren
+2. `dotnet run --project src/ZugPferdLite`
+
+Das erzeugt die Datei `Rechnung_INV-0001.xml` im aktuellen Verzeichnis.
+
 
 ---
 
@@ -29,7 +38,7 @@ Ein Programm, das bestehende PDF- oder Bild-Rechnungen als Vorlage nutzt und dar
 - **Betriebssystem**  
   - Windows 10 oder höher
 - **Laufzeitumgebung & Frameworks**  
-  - .NET 6 oder höher (WPF für die GUI)  
+  - .NET 8 oder höher (WPF für die GUI)
   - C# als Programmiersprache
 - **Bibliotheken & Tools**  
   - **PDF-Verarbeitung**: iTextSharp  
@@ -42,7 +51,7 @@ Ein Programm, das bestehende PDF- oder Bild-Rechnungen als Vorlage nutzt und dar
 ---
 
 ## 4. Installation
-1. **.NET 6+ SDK installieren**  
+1. **.NET 8+ SDK installieren**
    - Von https://dotnet.microsoft.com herunterladen und installieren  
 2. **Programm-Paket herunterladen**  
    - ZIP-Datei entpacken oder MSI-Installer ausführen  
@@ -269,7 +278,7 @@ Ein Programm, das bestehende PDF- oder Bild-Rechnungen als Vorlage nutzt und dar
 
 ## 9. Fehlerbehebung
 - **Programm startet nicht**  
-  - Prüfe, ob .NET 6+ installiert ist  
+  - Prüfe, ob .NET 8+ installiert ist
   - Fehlende DLL: Stelle sicher, dass `iTextSharp.dll` und `Tesseract.dll` im Programmverzeichnis liegen
 - **Vorschaubild wird nicht angezeigt**  
   - PDF-Datei ist zu groß (> 50 MB): Passe Thumbnail-Größe in `appsettings.json` an  
